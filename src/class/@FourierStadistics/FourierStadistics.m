@@ -43,7 +43,7 @@ classdef FourierStadistics
                 fourier_terms(:,iter) = fft(sValues);
 
             end
-            if false
+            if true
                 obj.ec = ec;
                 obj.FourierTerms = fourier_terms(:,1:iter);  
 

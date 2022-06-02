@@ -15,23 +15,11 @@ r = webread(urlcall);
 %%
 i = 0;
 ds = [];
-
-try 
-    r.list{1};
-    key_type = true;
-catch
-    key_type = false;
-end
-      
-    
 for il = r.list'
     i = i + 1;
     %ds.temp_min(i,:) = il{:}.main.temp_min;
     %ds.temp_max(i,:) = il{:}.main.temp_max;
-
-    if ~key_type
-        il = {il};
-    end
+    
     ds.humidity(i,:) = il{:}.main.humidity;
     ds.clouds(i,:) = il{:}.clouds.all;
 

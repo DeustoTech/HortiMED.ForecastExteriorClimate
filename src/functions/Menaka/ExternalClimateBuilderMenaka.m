@@ -38,7 +38,7 @@ function [full_ds,ds_forecast] = ExternalClimateBuilderMenaka(DateInit)
 
     ds_forecast  = ForecastOPW(lat,lon);
     %%
-    load('data/SignalsGenerator.mat')
+    load('data/SignalsGenerator_Menaka.mat')
     %%
     ds_syntetic = [];
 

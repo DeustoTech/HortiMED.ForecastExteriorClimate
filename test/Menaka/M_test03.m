@@ -47,4 +47,4 @@ fig = figure();
 compareSignals(fig,r,rold,ivar{:})
 
 %%
-save('data/SignalsGenerator.mat','iSG')
+save('data/SignalsGenerator_Menaka.mat','iSG')
